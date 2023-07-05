@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="cover_place">
+            <main>
+                <div class="atom">
+                    <div class="electron"></div>
+                    <div class="electron-alpha"></div>
+                    <div class="electron-omega"></div>
+                </div>
+            </main>
+            <div class="main_info_wrapper">
+
+                <div class="profile_picture">
+                    <img src="img/pic.png" alt="Profile Picture" />
+                </div>
+                <div class="heading">
+                    <h3>CoderBoy M J H Nahid <br> Coding is Love ❤️</h3>
+                </div>
+
+                <div class="social-buttons">
+  
+                    <a href="https://www.instagram.com/" class="social-button social-button--instagram" aria-label="Instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" class="social-button social-button--youtube" aria-label="YouTube">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" class="social-button social-button--facebook" aria-label="Facebook">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" class="social-button social-button--linkedin" aria-label="LinkedIn">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://web.whatsapp.com/" class="social-button social-button--whatsapp" aria-label="LinkedIn">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="search-container" style="margin-top: 5%;">
+            <div id="search-input-container">
+              <img src="https://assets.codepen.io/1468070/Google+G+Icon.png" alt="" />
+              <input type="text" placeholder="Search anything" id="search" />
+            </div>
+  
+            <button id="image-button" onclick="googleSearch();" type="button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+  
+            <button id="mic-button" type="button">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+        </div>
+
+        <div id="apps-container">
+            
+            <a href="https://www.youtube.com/">
+              <img src="img/youtube.png" alt="">
+              <div class="label">
+                <span class="name">Youtube</span>
+                <span class="url" contenteditable="true">www.youtube.com</span>
+              </div>
+            </a>
+
+            <a href="https://www.freelancer.com/dashboard">
+                <img src="img/freelancer.png" alt="">
+                <div class="label">
+                  <span class="name">Freelancer</span>
+                  <span class="url" contenteditable="true">www.freelancer.com</span>
+                </div>
+            </a>
+
+            <a href="https://www.upwork.com/nx/find-work/">
+                <img src="img/upwork.png" alt="">
+                <div class="label">
+                  <span class="name">Upwork</span>
+                  <span class="url" contenteditable="true">www.upwork.com</span>
+                </div>
+            </a>
+
+            <a href="https://www.facebook.com/">
+                <img src="img/facebook.png" alt="">
+                <div class="label">
+                  <span class="name">Facebook</span>
+                  <span class="url" contenteditable="true">www.facebook.com</span>
+                </div>
+            </a>
+
+            
+          </div>
+
+    </div>
+
+    <script>
+      function googleSearch()
+      {
+          var text=document.getElementById("search").value;
+          var cleanQuery = text.replace(" ","+",text);
+          var url='http://www.google.com/search?q='+cleanQuery;
+      
+          window.location.href=url;
+      }
+      </script>
+</body>
+</html>
